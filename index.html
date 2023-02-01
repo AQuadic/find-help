@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,10 +16,10 @@
   <body>
     <nav
       class="container"
-      style="display: flex; align-items: center; justify-content: space-between"
+      style="display: flex; align-items: center; justify-content: space-between ;padding-top: 8px;"
     >
-      <img src="./image/logo.svg" alt="help" />
-      <div style="display: flex; gap: 8px; align-items: center">
+    <a href="#">  <img src="./image/logo.svg" alt="help" /></a>
+      <div id="ch_lang" style="display: flex; gap: 8px; align-items: center">
         <img src="./image/lang.png" alt="lang" />
         <p>EN</p>
       </div>
@@ -31,12 +31,13 @@
     <section class="about container">
       <div class="part1">
         <h1>Get All Things Done With Find Help</h1>
-        <h2>Find All The Services You Need In Find Help App</h2>
+        <p>Find All The Services You Need In Find Help App</p>
         <div class="about_app">
           <p>Download The App Now</p>
           <div class="img_app">
-            <img src="./image/app.svg" alt="app_store" />
-            <img src="./image/play.svg" alt="google_play" />
+            <a href="#"> <img src="./image/app.svg" alt="app_store" /></a>
+            <a href="#">   <img src="./image/play.svg" alt="google_play" /></a>
+           
           </div>
         </div>
       </div>
@@ -160,8 +161,8 @@
         <h2>Find All The Services You Need In Find Help App</h2>
         <h3>Download The App Now</h3>
         <div class="img_app">
-          <img src="./image/app.svg" alt="app" />
-          <img src="./image/play.svg" alt="play" />
+          <a href="#"> <img src="./image/app.svg" alt="app_store" /></a>
+          <a href="#">   <img src="./image/play.svg" alt="google_play" /></a>
         </div>
         <div></div>
       </div>
@@ -177,5 +178,13 @@
         <p>All rights reserved.</p>
       </div>
     </footer>
+    <script>
+const btn_lang = document.getElementById("ch_lang");
+function ch  (){
+  window.document.dir === "rtl"?window.document.dir = "ltr":window.document.dir = "rtl";
+
+}
+btn_lang.addEventListener("click",ch)
+    </script>
   </body>
 </html>

@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url("../fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Sans2';
+  src: url('../fonts/DMSans-Medium.ttf');
+  ont-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Sans3';
+  src: url('../fonts/DMSans-Regular.ttf');
+  ont-weight: 400;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: start ;
+  font-family: 'DM Sans2';
+}
+h1,h2{
+  font-family: 'DM Sans';
+}
 body {
   position: relative;
 }
@@ -39,7 +67,7 @@ nav p {
   font-size: 48px;
   line-height: 65px;
 }
-.about .part1 h2 {
+.about .part1 p {
   max-width: 390px;
 
   font-weight: 500;
@@ -66,7 +94,7 @@ nav p {
 }
 .img_app img {
   max-width: 187px;
-  width: 48%;
+  width: 100%;
 }
 .about .part2 {
 }
@@ -124,7 +152,7 @@ nav p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
+  font-family: 'DM Sans3';
   color: #535353;
 }
 .services .img_services {
@@ -236,6 +264,7 @@ nav p {
 footer {
   padding: 54px 0px 44px;
   background-color: hsla(44, 89%, 61%, 0.1);
+  margin-top: 120px;
 }
 footer .about_footer {
   text-align: center;
@@ -281,6 +310,9 @@ footer .copy .icon_scoial {
   gap: 12px;
 }
 footer .img_app img {
+  width: 100%;
+}
+footer .img_app a {
   max-width: 145px;
 }
 @media (max-width: 786px) {
@@ -360,8 +392,14 @@ footer .img_app img {
   line-height: 31px;
 
   color: #ffffff;
+  transition: 0.3s;
 }
-
+a.btn_page:hover{
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 0px 13px #6c5005;
+  transform: scale(0.9)
+}
 @media (max-width: 786px) {
   .add .part1 img {
     max-width: 100%;
@@ -388,4 +426,47 @@ footer .img_app img {
     width: 195px;
     height: 195px;
   }
+}
+@media (max-width: 450px){
+  .about .part1 h1 {
+   
+    font-size: 36px;
+  
+}
+.about .part1 h2 ,.add .part2 p ,.extrem .part1 h3{
+ 
+  font-size: 16px;
+ 
+}
+.about .part1 .about_app p ,.services .services_item .item h2 {
+ 
+  font-size: 18px;
+ 
+}
+
+.services .services_item .item p ,.extrem .part1 .contact .contact_info p,footer .about_footer h3,footer .copy p{
+ 
+  font-size: 14px;
+ 
+}
+.add .part2 h2 ,.extrem .part1 h2 {
+ 
+  font-size: 34px;
+ 
+}
+.btn_page {
+ 
+  width: 240px;
+  max-width: 100%;
+  height: 62px;
+ 
+  font-size: 18px;
+ 
+}
+footer .about_footer h2 {
+ 
+  font-size: 22px;
+  
+ 
+}
 }
