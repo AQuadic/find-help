@@ -564,3 +564,168 @@ footer {
 }
 }
 /*end speak */
+
+
+/*=========================== stert Email ======================*/
+.email{
+  padding: 36px 16px 50px;
+}
+.box_one{
+  width: 375px;
+  background-color: white;
+}
+.box_one .box_img{
+  position: relative;
+  width: 343px;
+height: 276px;
+}
+.box_one .box_img .frist_img{
+  width: 100%;
+  height: 100%;
+}
+.box_one .box_img .box_logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 50;
+  width: 200px;
+height: 136px;
+}
+.box_one .content{
+  padding: 22px 16px 34px;
+  background-color: white;
+  max-width: 310px;
+  margin:-66px auto 42px;
+  position: relative;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.email h1{
+  font-size: 24px;
+line-height: 40px;
+text-align: center;
+font-family: "DM Sans";
+margin-bottom: 24px;
+}
+.box_one .content .person{
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+ 
+  display: block;
+  margin: 0px auto 6px;
+}
+.box_one .content h2{
+  font-size: 18px;
+font-family: "DM Sans";
+line-height: 23px;
+text-align: center;
+margin-bottom: 30px;
+}
+.box_one .content .btn_page {
+  height: 46px;
+  width: 166px;
+  border-radius: 5px;
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.email .box_end{
+  background: #F7F7F7;
+  padding: 10px 44px;
+}
+.email .box_end p{
+  font-size: 16px;
+line-height: 25px;
+text-align: center;
+margin-bottom: 10px;
+}
+.email  .store{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+.email  .store a{
+  height: 30px;
+flex: 1;
+max-width: 100px;
+}
+.email  .store a img{
+  width: 100%;
+  height: 100%;
+}
+.email .box_end .links_social{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+.box_one .content .information{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #EFEFEF;
+}
+.box_one .content .information .person2{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.box_one .content .information .name_phone h3{
+  font-size: 16px;
+line-height: 21px;
+font-family: "DM Sans";
+margin-bottom: 4px;
+}
+.box_one .content .information .name_phone p{
+  font-size: 14px;
+line-height: 18px;
+text-decoration-line: underline;
+font-family: "DM Sans";
+
+}
+.box_one .clientData h4{
+ 
+  font-size: 18px;
+  line-height: 23px;
+font-family: "DM Sans";
+margin-bottom:10px;
+
+}
+.box_one .clientData h5{
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 22px;
+}
+.box_one .clientData ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+.box_one .clientData ul li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+}
+.box_one .clientData ul li img{
+  height: 20px;
+  width: 20px;
+}
+.box_one .clientData ul li p{
+  font-size: 14px;
+font-family: "DM Sans";
+
+line-height: 18px;
+}
+.email .message{
+  font-size: 16px;
+line-height: 30px;
+margin-bottom: 24px;
+}
+/*=========================== end Email ======================*/
+
