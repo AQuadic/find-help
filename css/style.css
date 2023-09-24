@@ -123,6 +123,57 @@ nav p {
  
   margin: 200px auto;
 }
+.add.add2 .part2 h2{
+  position: relative;
+}
+.add.add2 .part2 h2:nth-of-type(2){
+  width: fit-content;
+}
+.add.add2 .part2 h2:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: 100%;
+  background-color: #f7ba00;
+  z-index: -1;
+  left: 7px;
+  bottom: 14px;
+}
+.add.add2 .part2 h2:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  background-image: url('../image/cap2.svg');
+  background-size: 68px;
+  width: 61.003px;
+  height: 63.208px;
+  right: -42px;
+  top: -12px;
+}
+.add2 h3{
+  font-size: 20px;
+  font-family: 'DM Sans';
+  margin-bottom: 16px;
+}
+.add2 ul{
+ display: flex;
+ align-items: flex-start;
+ justify-content: flex-start;
+ gap: 16px;
+ list-style: none;
+}
+.add2 ul li{
+
+ 
+}
+.add2 ul li a{
+ 
+ 
+}
+.add2 ul li a img{
+  width: 187px;
+height: auto;
+ 
+}
 .services .services_item {
   display: flex;
 
@@ -190,6 +241,11 @@ nav p {
   .services .services_item .item .img_item {
     height: 52px;
     min-width: 52px;
+  }
+  .add2 ul li a img{
+    width: 100%;
+  height: auto;
+   
   }
 }
 
@@ -332,6 +388,19 @@ footer .img_app a {
 .add .part1 {
   position: relative;
 }
+.add .part1 .cap{
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+.add .part1 .backpohne{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 190%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
 .add .part1::before {
   position: absolute;
   content: "";
@@ -373,7 +442,7 @@ footer .img_app a {
   line-height: 30px;
   text-transform: capitalize;
   color: #272727;
-  margin: 16px 0px 32px;
+  margin: 16px 0px 26px;
 }
 .btn_page {
   display: flex;
@@ -398,6 +467,7 @@ a.btn_page:hover{
   transform: scale(0.9)
 }
 @media (max-width: 786px) {
+  
   .add .part1 img {
     max-width: 100%;
   }
@@ -424,6 +494,11 @@ a.btn_page:hover{
     width: 195px;
     height: 195px;
   }
+  .add .part1 .cap {
+   
+    top: -100px;
+    left: -120px;
+}
 }
 @media (max-width: 450px){
   .about .part1 h1 {
