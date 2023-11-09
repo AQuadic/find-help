@@ -28,6 +28,7 @@ h1,h2{
 }
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .setting,
 .yellow {
@@ -148,6 +149,12 @@ nav p {
   height: 63.208px;
   right: -42px;
   top: -12px;
+}
+html[dir='rtl'] .add.add2 .part2 h2:nth-of-type(2)::after {
+  transform: rotateY(180deg);
+  left: -42px;
+  right: auto;
+
 }
 .add2 h3{
   font-size: 20px;
@@ -384,6 +391,7 @@ footer .img_app a {
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 200px;
+  margin-top: 120px;
 }
 .add .part1 {
   position: relative;
@@ -478,6 +486,8 @@ a.btn_page:hover{
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 88px;
+    margin-top: 20px;
+
   }
   .add .part1::before {
     background-size: 136px;
@@ -495,7 +505,7 @@ a.btn_page:hover{
     height: 195px;
   }
   .add .part1 .cap {
-   
+    z-index: -1;
     top: -100px;
     left: -120px;
 }
@@ -523,10 +533,19 @@ a.btn_page:hover{
  
 }
 .add .part2 h2 ,.extrem .part1 h2 {
- 
+  line-height: 44px;
   font-size: 34px;
  
 }
+.add.add2 .part2 h2:nth-of-type(2)::before {
+ 
+  bottom: 4px;
+}
+.add.add2 .part2 h2:nth-of-type(2)::after {
+ 
+  top: -32px;
+}
+
 .btn_page {
  
   width: 240px;
